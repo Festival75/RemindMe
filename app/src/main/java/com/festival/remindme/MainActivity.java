@@ -1,6 +1,5 @@
 package com.festival.remindme;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -11,9 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.festival.remindme.adapter.TabPagerFragmentAdapter;
-
-import static android.R.attr.id;
+import com.festival.remindme.adapter.TabsFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void InitTabs() {
         viewPager = (ViewPager) findViewById(R.id.viewPager);
-        TabPagerFragmentAdapter adapter = new TabPagerFragmentAdapter(getSupportFragmentManager());
+        TabsFragmentAdapter adapter = new TabsFragmentAdapter(this, getSupportFragmentManager());
 
         viewPager.setAdapter(adapter);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
