@@ -5,4 +5,5 @@
     <color name="colorPrimaryLight">#5efc82</color>
     <color name="mainBackground">#ebebeb</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#090909</color>
 </resources>
